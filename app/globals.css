@@ -2,28 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../public/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .bg-custom-gradient {
+    @apply bg-gradient-to-r from-[#802626] to-[#FF8080] text-white;
+  }
+  .bg-custom-gradient-2 {
+    background: linear-gradient(96deg, #AB4646 -6.35%, #56261F 113.64%);
+    color: #FFF;
+    /* You can also add other Tailwind utilities if needed */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFF;
+  font-family: 'Poppins' !important;
 }
 
 @layer utilities {
