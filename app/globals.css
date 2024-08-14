@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url(../public/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(../public/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
 }
 
 @layer components {
@@ -12,9 +13,18 @@
     @apply bg-gradient-to-r from-[#802626] to-[#FF8080] text-white;
   }
   .bg-custom-gradient-2 {
-    background: linear-gradient(96deg, #AB4646 -6.35%, #56261F 113.64%);
-    color: #FFF;
+    background: linear-gradient(96deg, #ab4646 -6.35%, #56261f 113.64%);
+    color: #fff;
     /* You can also add other Tailwind utilities if needed */
+  }
+
+  .radius-left-10 {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .nav-shadow {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
   }
 }
 
@@ -24,9 +34,9 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #FFF;
-  font-family: 'Poppins' !important;
+body {
+  background-color: #fff;
+  font-family: "Poppins" !important;
 }
 
 @layer utilities {
