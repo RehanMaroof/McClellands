@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Dashboard from "../components/dashboard";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="px-[50px] pt-[61px]">
+      <Dashboard />
     </div>
   );
 }
