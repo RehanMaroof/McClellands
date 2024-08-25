@@ -11,10 +11,10 @@ export const navItems = [
     title: "Job Applications",
     link: "/job-applications",
   },
-  {
-    title: "Available Jobs",
-    link: "/available-jobs",
-  },
+  // {
+  //   title: "Available Jobs",
+  //   link: "/available-jobs",
+  // },
   {
     title: "Settings",
     link: "/settings",
