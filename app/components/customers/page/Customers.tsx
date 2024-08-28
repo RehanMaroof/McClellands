@@ -17,10 +17,10 @@ const Customers = () => {
           params: { page, limit: 10 } // Request specific page with a limit of 10 customers per page
         });
         console.log("API Response:", response);
-
+        console.log("customer",response.data.customers)
         if (response && response.data && response.data.customers) {
           setCustomers(response.data.customers);
-          setTotalPages(response.data.totalPages);
+          setTotalPages(response.data.data.totalPages);
         } else {
           console.error("Unexpected API response format");
         }
